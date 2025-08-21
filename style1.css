@@ -1,0 +1,116 @@
+/* Reset */
+* {
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
+*:not(i) {
+  font-family: "Poppins", sans-serif;  /* Sabhi text ke liye ek modern clean font */
+}
+
+/* Body background */
+body {
+  background-image: url(https://i.pinimg.com/1200x/f2/ee/5d/f2ee5d702d596599c246daffd0ad25ea.jpg); /* ✨ Background image set */
+  background-size: cover;   /* ✨ Full screen fill kare */
+  background-position: center;  /* ✨ Image ko center align kare */
+  background-repeat: no-repeat; /* ✨ Repeat na ho */
+  
+  display: flex;             /* ✨ Container ko center karne ke liye */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;         /* ✨ Full screen height */
+}
+
+/* Container */
+.container {
+  background: rgba(255, 255, 255, 0.2);  /* ✨ Transparent white (glassmorphism) */
+  backdrop-filter: blur(10px);           /* ✨ Background blur */
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  width: 90vmin;
+  max-width: 600px;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border-color: black;
+  border-width: 5px;
+}
+
+/* Title */
+.title {
+  font-size: 5rem;
+  margin-bottom: 25px;
+  color: #000000;
+  font-family: "Brush Script MT", "Bradley Hand", cursive;  /* ✨ Deep maroon text */
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+.search-box input {
+  flex: 1;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 2px solid #797003;     /* ✨ Olive border */
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.search-box input:focus {
+  border-color: #def018;         /* ✨ Bright yellow-green on focus */
+  box-shadow: 0 0 8px rgba(219, 216, 38, 0.4);
+}
+.search-box button {
+  padding: 12px 20px;
+  background:white ; /* ✨ Dark olive gradient */
+  color: #0e0000;              /* ✨ Text bhi olive tone */
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+.search-box button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(220, 240, 3, 0.805); /* ✨ Neon yellow glow */
+}
+
+/* Result Box */
+.result {
+  text-align: left;
+  margin-top: 20px;
+}
+.word {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.word h3 {
+  font-size: 1.5rem;
+  color: black; /* ✨ Olive text */
+}
+.sound-btn {
+  background: rgb(110, 107, 1);  /* ✨ Olive yellow button */
+  color: #b6f703;               /* ✨ Bright lime icon */
+  border: none;
+  padding: 8px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+.sound-btn:hover {
+  background: #4e6005;  /* ✨ Darker olive on hover */
+}
+.definition {
+  font-size: 1rem;
+  color: black;  /* ✨ Dark olive text */
+  line-height: 1.5;
+}
